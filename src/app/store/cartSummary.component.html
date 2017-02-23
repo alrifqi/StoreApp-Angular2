@@ -1,0 +1,15 @@
+<div class="pull-xs-right pull-right" style="margin-top: 10px; margin-right: 10px;">
+    <button class="btn btn-primary" [disabled]="cart.itemCount == 0" routerLink="/cart">
+        <small>
+            Your cart:
+            <span *ngIf="cart.itemCount > 0">
+                {{ cart.itemCount }} item(s)
+                {{ cart.cartPrice | currency:"USD":true:"2.2-2" }}
+            </span>
+            <span *ngIf="cart.itemCount == 0">
+                (empty)
+            </span>
+        </small>
+        <i class="glyphicon glyphicon-shopping-cart"></i>
+    </button>
+</div>
