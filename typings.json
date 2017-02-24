@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "angular": "registry:dt/angular#1.6.0+20170223151516"
+  },
+  "globalDependencies": {
+    "core-js": "registry:dt/core-js#0.9.7+20161130133742",
+    "node": "registry:dt/node#7.0.0+20170204020307"
+  }
+}
